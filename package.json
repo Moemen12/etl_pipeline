@@ -1,0 +1,24 @@
+{
+  "name": "etl-assessment",
+  "version": "1.0.0",
+  "description": "",
+  "license": "ISC",
+  "author": "Moemen saadeh",
+  "type": "module",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "dependencies": {
+    "@types/node": "^24.1.0",
+    "@types/pg": "^8.15.5",
+    "dotenv": "^17.2.1",
+    "fast-csv": "^5.0.2",
+    "pg": "^8.16.3",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.9.2"
+  },
+  "devDependencies": {
+    "tsx": "^4.20.3"
+  }
+}
