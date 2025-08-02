@@ -1,0 +1,10 @@
+Loom Video Link:
+
+
+
+For AI:
+
+I've used claude to build All SQL Queries in Optimized way, Generally Currently we don't Write Pure SQL queries unless we need specific or complex case that can't be done by using ORM like (typeOrm,Prisma...), But we Generally understand it if we didn't write it,we know generally how to Optimize  DB queries,Structure, what problems or whatever should we avoid like N+1 query and what solutions should we implement for specific cases.
+
+In addition I;ve used Minus ai For Doing some research about what are the best packages or libraries that can be good fit for this App. So For example i discover 2 packages for parsing CSV files like  (fast-csv and csv-parser) and i took a look on their documentations. I used it For adding some logs to measure performance of my app when i run my system.
+AI basically is a tool that we can use it to accelerate our work speed and to make it better if we use it correctly.

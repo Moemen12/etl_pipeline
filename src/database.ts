@@ -19,7 +19,6 @@ const pool = new Pool({
 export async function initDatabase(): Promise<void> {
     try {
         const client = await pool.connect();
-        // Create caregivers table
         await client.query(`
             CREATE TABLE IF NOT EXISTS caregivers (
                 franchisor_id VARCHAR(255) NOT NULL,
@@ -157,8 +156,8 @@ export async function insertCarelogs(carelogs: Carelog[]): Promise<void> {
                 carelog.carelog_id,
                 carelog.caregiver_id,
                 carelog.parent_id,
-                carelog.start_datetime.toISOString(),
-                carelog.end_datetime.toISOString(),
+                carelog.start_datetime ? carelog.start_datetime.toISOString() : null,
+                carelog.end_datetime ? carelog.end_datetime.toISOString() : null,
                 carelog.clock_in_actual_datetime ? carelog.clock_in_actual_datetime.toISOString() : null,
                 carelog.clock_out_actual_datetime ? carelog.clock_out_actual_datetime.toISOString() : null,
                 carelog.clock_in_method,
